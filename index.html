@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VR Presentación</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
 
+  <body>
+    <a-scene>
+
+      <!-- Fondo -->
+      <a-sky color="#1a1a1a"></a-sky>
+
+      <!-- Título -->
+      <a-text value="Mi Presentación VR"
+              position="-1 2 -3"
+              color="white"></a-text>
+
+      <!-- Botón PDF 1 -->
+      <a-box position="-2 1 -3" color="tomato"
+             onclick="window.open('pdfs/documento1.pdf')">
+        <a-text value="PDF 1" position="-0.4 0 0.6"></a-text>
+      </a-box>
+
+      <!-- Botón PDF 2 -->
+      <a-box position="2 1 -3" color="teal"
+             onclick="window.open('pdfs/documento2.pdf')">
+        <a-text value="PDF 2" position="-0.4 0 0.6"></a-text>
+      </a-box>
+
+      <!-- Cámara (VR / mirada) -->
+      <a-camera></a-camera>
+
+    </a-scene>
+  </body>
+</html>
